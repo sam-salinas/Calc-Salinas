@@ -1,0 +1,53 @@
+.calculadora {
+    width: 20rem;
+    height: 30rem;
+    background-color: cornsilk;
+    display: grid;
+    padding: 1%;
+    position: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: ridge;
+  }
+  
+  .keys-numeros {
+    grid-area: keys-numeros;
+    direction: rtl;
+  }
+  
+  .keys-numeros .key-cero {
+    width: 9.1rem;
+    text-align: left;
+    padding-left: 15%;
+  }
+  .keys-operaciones {
+    grid-area: keys-operaciones;
+  }
+  .keys-funciones {
+    grid-area: keys-funciones;
+  }
+  .calculadora-keypad {
+    padding-top: 0.3rem;
+    background-color: chocolate;
+    display: grid;
+    grid-template-columns: repeat(4, 5rem);
+    grid-template-rows: repeat(5, 5rem);
+    grid-template-areas: "keys-funciones keys-funciones keys-funciones keys-operaciones" "keys-numeros keys-numeros keys-numeros keys-operaciones" "keys-numeros keys-numeros keys-numeros keys-operaciones" "keys-numeros keys-numeros keys-numeros keys-operaciones" "keys-numeros keys-numeros keys-numeros keys-operaciones";
+  }
+  .calculadora-input {
+    border-color: black;
+    border: ridge;
+    text-align: right;
+    padding-right: 10%;
+    font-weight: bold;
+    font-size: xx-large;
+  }
+  
+  .result {
+    min-height: 3rem;
+    color: black;
+  }
+  
